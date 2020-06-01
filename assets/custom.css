@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .submenu {
@@ -45,6 +46,11 @@ body {
     margin-top: 15px;
 
 }
+/*NAV - MENU FIXO*/
+.menu-fixo {
+    display: flex;
+    width: 100%;
+}
 
 .b-apps {
     background-color: #689F38;
@@ -55,7 +61,7 @@ body {
     margin-right: 20px;
 }
 
-.category {  /*botão de categorias ao lado de Apps*/
+.category {  
     background-color: #ffffff;
     border: none;
     font-family: 'Roboto', sans-serif;
@@ -85,13 +91,123 @@ body {
 
 .conta {
     background-color: #ffffff;
-    border-bottom: #689F38 3px solid;
+    border-bottom: #689F38 2px solid;
     border-top: none;
     border-left: none;
     border-right: none;
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: bolder;
     height: 50px;
 
+}
+
+.b-help {
+  width: 35px;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid #D4D4D4;
+  background-color: #ffffff;
+  border-radius: 5px;
+  align-self: center;
+  margin-left: 520px;
+}
+.b-settings {
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #D4D4D4;
+    background-color: #ffffff;
+    border-radius: 5px;
+    align-self: center;
+    margin-left: 20px;
+}
+
+/*FIM NAV*/
+
+/*Aside*/
+
+.acesso-rapido {
+    width: 200px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+}
+
+
+.b-meusapps {
+    width: 90%;
+    height: 35px;
+    border: none;
+    opacity: 0.8;
+    background-color: #F5F5F5;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.b-meusapps:hover {
+    background-color: #E8E8E8;
+}
+
+.b-comprar {
+    background-color: #F5F5F5;
+    border: none;
+    width: 90%;
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #689F38;
+    font-weight: bolder;
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 10px;
+
+}
+
+.b-comprar:hover {
+    background-color: #E8E8E8;
+}
+
+.hr{
+    opacity: 0.5;
+    width: 130px;
+}
+
+.b-jogos, .b-familia {
+    background-color: #F5F5F5;
+    border: none;
+    width: 90%;
+    height: 30px;
+    font-size: 14px;
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.b-editores {
+    margin-bottom: 30px;
+    background-color: #F5F5F5;
+    border: none;
+    width: 90%;
+    height: 30px;
+    font-size: 14px;
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.b-jogos:hover, .b-familia:hover, .b-editores:hover {
+    background-color: #E8E8E8;
+}
+
+.more {
+    height: 215px;
+    border: none;
+    background-color: #ffffff;
+    align-content: center;
 }
