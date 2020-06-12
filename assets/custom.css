@@ -1,6 +1,8 @@
-body {
+body, ul, li, a  {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 0;
 }
 
 .submenu {
@@ -49,6 +51,7 @@ body {
 /*NAV - MENU FIXO*/
 .menu-fixo {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -127,7 +130,7 @@ body {
 /*Aside*/
 
 .acesso-rapido {
-    width: 200px;
+    width: 180px;
     height: 210px;
     display: flex;
     flex-direction: column;
@@ -146,7 +149,6 @@ body {
     font-size: 18px;
     margin-top: 5px;
     text-align: left;
-    padding-left: 30px;
 }
 
 .b-meusapps:hover {
@@ -164,7 +166,6 @@ body {
     font-weight: bolder;
     float: right;
     text-align: left;
-    padding-left: 30px;
     margin-bottom: 10px;
 
 }
@@ -186,7 +187,6 @@ body {
     font-size: 14px;
     float: right;
     text-align: left;
-    padding-left: 30px;
 }
 
 .b-editores {
@@ -198,16 +198,41 @@ body {
     font-size: 14px;
     float: right;
     text-align: left;
-    padding-left: 30px;
 }
 
-.b-jogos:hover, .b-familia:hover, .b-editores:hover {
+.b-jogos:hover, .b-familia:hover, .b-editores:hover, .menu-conta li:hover {
     background-color: #E8E8E8;
+    color: #000000;
 }
 
 .more {
-    height: 215px;
+    height: 210px;
     border: none;
     background-color: #ffffff;
     align-content: center;
+}
+.sidebar {
+    max-width: 200px ;
+    display: flex
+}
+
+.menu-conta  {
+    border-top: 1px solid #D4D4D4;
+    font-size: 14px;
+    text-align: left;
+    max-width: 183px;
+    max-height: 300px;
+    background-color: #F5F5F5;
+    padding-left: 15px;
+}
+
+.menu-conta li {
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.hero {
+    border: 1px solid red;
 }
